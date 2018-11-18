@@ -27,6 +27,8 @@ import org.apache.ibatis.reflection.invoker.MethodInvoker;
 import org.apache.ibatis.reflection.property.PropertyTokenizer;
 
 /**
+ *查找目标类的创建，getter，setter 的工具类
+ * 通过 ReflectorFactory 和 类型 构建实例，获取类的已经解析好的信息
  * @author Clinton Begin
  */
 public class MetaClass {

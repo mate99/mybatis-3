@@ -17,7 +17,14 @@ package org.apache.ibatis.reflection.property;
 
 import java.util.Iterator;
 
-/**
+/** 分解表达式到属性
+ * 例如：user[0].order[1].orderNo
+ *
+ * name: user
+ * indexedName: user[0]
+ * index:0
+ * children:order[1].orderNo
+ *
  * @author Clinton Begin
  */
 public class PropertyTokenizer implements Iterator<PropertyTokenizer> {
